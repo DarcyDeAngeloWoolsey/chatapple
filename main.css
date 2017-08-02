@@ -1,0 +1,160 @@
+body {
+    background-color: azure;
+    box-sizing: border-box;
+    margin: 0px 0px 150px 0px;
+    font-size: 10px;
+}
+
+header {
+    position: fixed;
+    background-color: cadetblue;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+}
+
+img.logo {
+    height: 90px;
+}
+
+.header-left,
+.header-right {
+    display: inline-block;
+    width: auto;
+    margin: 5px 10px;
+    height: 100px;
+}
+
+.header-right {
+    float: right;
+}
+
+.userName,
+.signInLink {
+    right: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    color: azure;
+    text-align: right;
+}
+
+.signInLink {
+    display: block;
+}
+
+main {
+    position: absolute;
+    margin: 0px 10px 10px 0px;
+    /* Firefox */
+    height: -moz-calc(100% - 75px);
+    /* WebKit */
+    height: -webkit-calc(100% - 55px);
+    /* Opera */
+    height: -o-calc(100% - 55px);
+    /* Standard */
+    height: calc(100% - 55px);
+}
+
+.chatBox {
+    font-size: 3rem;
+    padding: 5px 10px;
+    overflow: auto;
+    /* Firefox */
+    height: -moz-calc(100% - 55px);
+    /* WebKit */
+    height: -webkit-calc(100% - 55px);
+    /* Opera */
+    height: -o-calc(100% - 55px);
+    /* Standard */
+    height: calc(100% - 55px);
+}
+
+.messageLeft,
+.messageRight {
+    background-color: beige;
+}
+
+#first {}
+
+#second {}
+
+.messageBar {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    background-color: #fefefe;
+    padding: 10px 0px 10px 0px;
+    vertical-align: top;
+}
+
+form {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    margin: 0px 5px 0px 5px;
+}
+
+.messageArea {
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    vertical-align: bottom;
+}
+
+.attachmentButton,
+.sendButton {
+    width: 45px;
+    height: 40px;
+    vertical-align: top;
+    box-sizing: content-box;
+    float: right;
+    margin: 0px 5px 0px 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: azure;
+    color: cadetblue;
+    border-radius: 5rem;
+    border: none;
+}
+
+.sendButton {}
+
+@media screen and (min-width: 501px) {
+    header {
+        position: fixed;
+        background-color: cadetblue;
+        height: 130px;
+        width: 100%;
+        z-index: 10;
+    }
+    img.logo {
+        height: 120px;
+    }
+    .header-left,
+    .header-right {
+        display: inline-block;
+        width: auto;
+        margin: 5px 10px;
+        height: 130px;
+    }
+    form {
+        width: 60%;
+        height: 100%;
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+    }
+    .messageArea {
+        width: 100%;
+        height: 40px;
+        font-size: 1.6rem;
+        vertical-align: bottom;
+    }
+    .attachmentButton,
+    .sendButton {
+        width: 55px;
+        height: 40px;
+        font-size: 1.4rem;
+        margin: 0px 10px 0px 10px;
+    }
+}
