@@ -10,14 +10,34 @@
 
 <body>
     <header>
-        <div class="header-left"><img class="logo" src="images/chatapple_logo_bg.png"></div>
-        <div class="header-right">
-            <a class=signInLink>Sign Out</a>
-            <p class=userName>Darcy</p>
+        <div class="headerWrap">
+            <div class="header-left"><img class="logo" src="images/chatapple_logo_bg.png"></div>
+            <div class="header-right">
+                <a class=signInLink>Sign Out</a>
+                <p class=userName>Darcy</p>
+            </div>
         </div>
     </header>
     <main>
         <div class="chatBox">
+            <div id="first" class="messageLeft">
+                <p>here is some text</p>
+            </div>
+            <div id="second" class="messageRight">
+                <p>here is even more text because we want to see what happens to the border</p>
+            </div>
+            <div id="first" class="messageLeft">
+                <p>here is some text</p>
+            </div>
+            <div id="second" class="messageRight">
+                <p>here is even more text because we want to see what happens to the border</p>
+            </div>
+            <div id="first" class="messageLeft">
+                <p>here is some text</p>
+            </div>
+            <div id="second" class="messageRight">
+                <p>here is even more text because we want to see what happens to the border</p>
+            </div>
             <div id="first" class="messageLeft">
                 <p>here is some text</p>
             </div>
@@ -29,13 +49,14 @@
     </main>
 
     <div class="messageBar">
-        <form action="">
-            <input class="messageArea" type="text" value="" placeholder="Chat Away...">
-        </form>
+        <div class="messageBarInside">
+            <form action="">
+                <input class="messageArea" type="text" value="" placeholder="Chat Away...">
+            </form>
 
-        <button class="sendButton" type="submit">Send</button>
-        <button class="attachmentButton">IMG</button>
-
+            <button class="sendButton" type="submit">Send</button>
+            <button class="attachmentButton">IMG</button>
+        </div>
 
 
 
