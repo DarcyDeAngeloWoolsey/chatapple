@@ -101,6 +101,7 @@ main {
 .messageLeft p,
 .messageRight p {
     margin: 0px;
+    color: red;
 }
 
 #first {}
@@ -123,22 +124,22 @@ main {
 }
 
 form {
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: inline-block;
     margin: 0px 5px 0px 5px;
 }
 
-.messageArea {
-    width: 100%;
+form > input {
+    width: 50%;
     height: 40px;
     vertical-align: text-bottom;
     border-color: cadetblue;
     padding: 2px;
 }
 
-.attachmentButton,
-.sendButton {
+form > .attachmentButton,
+form > button {
     width: 45px;
     height: 40px;
     vertical-align: top;
@@ -152,8 +153,6 @@ form {
     border-radius: 5rem;
     border: none;
 }
-
-.sendButton {}
 
 @media screen and (min-width: 501px) {
     header {
@@ -174,19 +173,19 @@ form {
         padding: 130px 10px 10px 0px;
     }
     form {
-        width: 60%;
+        width: 100%;
         height: 100%;
         display: inline-block;
         margin: 0px 10px 0px 10px;
     }
-    .messageArea {
-        width: 100%;
+    form > input {
+        width: 60%;
         height: 40px;
         font-size: 1.6rem;
         vertical-align: text-bottom;
     }
-    .attachmentButton,
-    .sendButton {
+    form > .attachmentButton,
+    form > button {
         width: 55px;
         height: 40px;
         font-size: 1.4rem;

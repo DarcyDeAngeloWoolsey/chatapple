@@ -21,28 +21,11 @@
     <main>
         <div class="chatBox">
             <div id="first" class="messageLeft">
-                <p>here is some text</p>
+                <!--Add riot tags for messages-->
+                <message-text></message-text>
             </div>
             <div id="second" class="messageRight">
-                <p>here is even more text because we want to see what happens to the border</p>
-            </div>
-            <div id="first" class="messageLeft">
-                <p>here is some text</p>
-            </div>
-            <div id="second" class="messageRight">
-                <p>here is even more text because we want to see what happens to the border</p>
-            </div>
-            <div id="first" class="messageLeft">
-                <p>here is some text</p>
-            </div>
-            <div id="second" class="messageRight">
-                <p>here is even more text because we want to see what happens to the border</p>
-            </div>
-            <div id="first" class="messageLeft">
-                <p>here is some text</p>
-            </div>
-            <div id="second" class="messageRight">
-                <p>here is even more text because we want to see what happens to the border</p>
+                <message-text></message-text>
             </div>
         </div>
 
@@ -52,15 +35,19 @@
         <div class="messageBarInside">
             <form action="">
                 <input class="messageArea" type="text" value="" placeholder="Chat Away...">
+
+
+                <button class="sendButton" type="submit">Send</button>
+                <!--
+                <button class="attachmentButton">IMG</button>-->
             </form>
-
-            <button class="sendButton" type="submit">Send</button>
-            <button class="attachmentButton">IMG</button>
         </div>
-
-
-
     </div>
+    <script src="bower_components/riot/riot.min.js"></script>
+    <script src="tags/message-text.js"></script>
+    <script>
+        riot.mount('message-text')
+    </script>
 
 </body>
 
